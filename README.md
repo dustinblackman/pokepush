@@ -1,5 +1,7 @@
 # Pokepush
 
+[![Build Status](https://travis-ci.org/dustinblackman/pokepush.svg?branch=master)](https://travis-ci.org/dustinblackman/pokepush)
+
 Dead simple Pokemon Go push notifications through Pushbullet when a new Pokemon arrives in a specified locations. Supports multiple users subscribed to desired locations.
 
 ## Setup
