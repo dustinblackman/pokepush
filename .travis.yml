@@ -2,6 +2,7 @@ language: go
 go:
  - 1.6.3
 install:
+  - make setup
   - go get github.com/alecthomas/gometalinter
   - gometalinter --install
 script:
