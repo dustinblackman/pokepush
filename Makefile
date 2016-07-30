@@ -1,8 +1,21 @@
 VERSION := 0.0.1
+GLIDE_COMMIT := 91d42a717b7202c55568a7da05be915488253b8d
+LINTER_COMMIT := 052c5941f855d3ffc9e8e8c446e0c0a8f0445410
 .PHONY: build dev dev-build dist
 
 build:
-	go build -o pokepush *.go
+	go build -ldflags="-X main.version $(VERSION)" -o pokepush *.go
+
+deps:
+	@if [ "$$(which glide)" = "" ]; then \
+		go get -v github.com/Masterminds/glide; \
+		cd $$GOPATH/src/github.com/Masterminds/glide;\
+		git checkout $(GLIDE_COMMIT);\
+		go install;\
+	fi
+	glide install
+	go install
+	glide install
 
 dev:
 	which reflex && echo "" || go get github.com/cespare/reflex
@@ -18,6 +31,9 @@ docker:
 	docker build -t dustinblackman/pokepush:latest .
 	rm ./pokepush
 	docker push dustinblackman/pokepush:latest
+
+install: deps test
+	go install -ldflags="-X main.version $(VERSION)" *.go
 
 dist:
 	which gox && echo "" || go get github.com/mitchellh/gox
@@ -40,10 +56,15 @@ dist:
 
 	rm -rf tmp
 
-setup:
-	which glide && echo "" || go get github.com/Masterminds/glide
-	glide install
+setup-linter:
+	@if [ "$$(which gometalinter)" = "" ]; then \
+		go get -v github.com/alecthomas/gometalinter; \
+		cd $$GOPATH/src/github.com/alecthomas/gometalinter;\
+		git checkout $(LINTER_COMMIT);\
+		go install;\
+		gometalinter --install;\
+	fi
 
 test:
-	which gometalinter && echo "" || (go get github.com/alecthomas/gometalinter && gometalinter --install)
-	gometalinter --vendor --fast --dupl-threshold=100 --cyclo-over=25 --min-occurrences=5 ./...
+	make setup-linter
+	gometalinter --vendor --fast --dupl-threshold=100 --cyclo-over=25 --min-occurrences=5 --disable=gas ./...

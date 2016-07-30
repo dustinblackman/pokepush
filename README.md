@@ -1,6 +1,7 @@
 # Pokepush
 
 [![Build Status](https://travis-ci.org/dustinblackman/pokepush.svg?branch=master)](https://travis-ci.org/dustinblackman/pokepush)
+[![Go Report Card](https://goreportcard.com/badge/github.com/dustinblackman/pokepush)](https://goreportcard.com/report/github.com/dustinblackman/pokepush)
 
 Dead simple Pokemon Go push notifications through Pushbullet when a new Pokemon arrives in a specified locations. Supports multiple users subscribed to desired locations.
 
@@ -42,7 +43,7 @@ A docker image is also available over at [Docker Hub](https://hub.docker.com/r/d
 After git pulling the repo in to your `$GOPATH`, executing the following to get a development setup running.
 
 ```bash
-make setup
+make deps
 make dev
 ```
 
