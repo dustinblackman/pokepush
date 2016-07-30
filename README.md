@@ -33,7 +33,7 @@ Dead simple Pokemon Go push notifications through Pushbullet when a new Pokemon 
 
 ## Docker
 
-A docker image is also available over at Docker Hub.
+A docker image is also available over at [Docker Hub](https://hub.docker.com/r/dustinblackman/pokepush/).
 
 ## Development
 
