@@ -1,0 +1,10 @@
+package: github.com/dustinblackman/pokepush
+import:
+- package: github.com/kellydunn/golang-geo
+- package: github.com/parnurzeal/gorequest
+- package: github.com/xconstruct/go-pushbullet
+- package: github.com/buger/jsonparser
+- package: github.com/davecgh/go-spew
+- package: github.com/robfig/cron
+- package: github.com/Sirupsen/logrus
+- package: github.com/x-cray/logrus-prefixed-formatter

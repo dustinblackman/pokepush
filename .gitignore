@@ -22,3 +22,7 @@ _testmain.go
 *.exe
 *.test
 *.prof
+
+dist/
+vendor/
+config.json

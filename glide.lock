@@ -1,0 +1,71 @@
+hash: 6b15d5f5635861ed52f8e4aa4a7409e5b83479ac4d59115e87c1dea48c7dc9f1
+updated: 2016-07-29T21:21:41.160461038-04:00
+imports:
+- name: github.com/buger/jsonparser
+  version: 7e1e8d146f6fc72452f4ddf8e0d61e93267f5cd0
+- name: github.com/davecgh/go-spew
+  version: 5215b55f46b2b919f50a1df0eaa5886afe4e3b3d
+- name: github.com/erikstmartin/go-testdb
+  version: 8d10e4a1bae52cd8b81ffdec3445890d6dccab3d
+- name: github.com/kellydunn/golang-geo
+  version: 6f16b0ccf2a6ebd1a234daacfb6199510fbd0db4
+- name: github.com/kylelemons/go-gypsy
+  version: 42fc2c7ee9b8bd0ff636cd2d7a8c0a49491044c5
+  subpackages:
+  - yaml
+- name: github.com/lib/pq
+  version: 4dd446efc17690bc53e154025146f73203b18309
+  subpackages:
+  - oid
+- name: github.com/mailru/easyjson
+  version: d5b7844b561a7bc640052f1b935f7b800330d7e0
+  subpackages:
+  - jlexer
+  - jwriter
+  - buffer
+- name: github.com/mattn/go-colorable
+  version: 9056b7a9f2d1f2d96498d6d146acd1f9d5ed3d59
+- name: github.com/mattn/go-isatty
+  version: 56b76bdf51f7708750eac80fa38b952bb9f32639
+- name: github.com/mgutz/ansi
+  version: c286dcecd19ff979eeb73ea444e479b903f2cfcb
+- name: github.com/moul/http2curl
+  version: b1479103caacaa39319f75e7f57fc545287fca0d
+- name: github.com/parnurzeal/gorequest
+  version: 045012d33ef41ea146c1b675df9296d0dc1a212d
+- name: github.com/pquerna/ffjson
+  version: 5b79949af5378123d6b0672afc88d3b214bb4f9f
+  subpackages:
+  - fflib/v1
+  - fflib/v1/internal
+- name: github.com/robfig/cron
+  version: 6f2e8282a1a0d694e55a48ce7d077ee46747feeb
+- name: github.com/Sirupsen/logrus
+  version: a283a10442df8dc09befd873fab202bf8a253d6a
+- name: github.com/ugorji/go
+  version: 3487a5545b3d480987dfb0492035299077fab33a
+  subpackages:
+  - codec
+- name: github.com/x-cray/logrus-prefixed-formatter
+  version: 78e945f7d6bfe5a81ce6121d92d8118e44303e58
+- name: github.com/xconstruct/go-pushbullet
+  version: 7701de4be0964342739f6626906fe3678a23c0f0
+- name: github.com/ziutek/mymysql
+  version: 8787d5581eb63f3f3b447f40c13f8e69e73f1b58
+  subpackages:
+  - godrv
+  - mysql
+  - native
+- name: golang.org/x/net
+  version: 6a513affb38dc9788b449d59ffed099b8de18fa0
+  subpackages:
+  - publicsuffix
+- name: golang.org/x/sys
+  version: a646d33e2ee3172a661fc09bca23bb4889a41bc8
+  subpackages:
+  - unix
+- name: gopkg.in/airbrake/gobrake.v2
+  version: 31c8ff1fb8b79a6947e6565e9a6df535f98a6b94
+- name: gopkg.in/gemnasium/logrus-airbrake-hook.v2
+  version: 31e6fd4bd5a98d8ee7673d24bc54ec73c31810dd
+devImports: []
