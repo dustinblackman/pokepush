@@ -1,9 +1,11 @@
 language: go
 go:
  - 1.6.3
+cache:
+  directories:
+  - vendor
 install:
-  - make setup
-  - go get github.com/alecthomas/gometalinter
-  - gometalinter --install
+  - make deps
+  - make setup-linter
 script:
  - make test
