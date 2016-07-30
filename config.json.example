@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "name": "Jim",
+      "pushbullet_key": "PUSHBULLET_KEY",
+      "places": ["Home", "Work"]
+    }
+  ],
+  "places": [
+    {"name": "Home", "lat": 51.501476, "lon": -0.140634},
+    {"name": "Work", "lat": 51.5159394, "lon": -0.1352864}
+  ],
+  "logs": "pretty"
+}
