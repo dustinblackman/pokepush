@@ -24,5 +24,6 @@ _testmain.go
 *.prof
 
 dist/
+tmp/
 vendor/
 config.json
